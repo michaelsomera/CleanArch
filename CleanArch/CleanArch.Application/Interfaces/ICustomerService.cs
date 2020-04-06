@@ -7,6 +7,6 @@ namespace CleanArch.Application.Interfaces
 {
     public interface ICustomerService
     {
-        IEnumerable<CustomerViewModel> GetCustomers();
+        CustomerViewModel GetCustomers();
     }
 }
