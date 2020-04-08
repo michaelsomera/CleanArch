@@ -1,0 +1,15 @@
+﻿@model CleanArch.Application.ViewModels.CustomerViewModel
+@{
+    ViewData["Title"] = "Index";
+    var m = Model;
+}
+
+<h1>Index</h1>
+<ul>
+
+    @foreach (var item in m.Customers)
+    {
+        <li>@item.Name</li>
+        <li>@item.BirthDate</li>
+    }
+</ul>

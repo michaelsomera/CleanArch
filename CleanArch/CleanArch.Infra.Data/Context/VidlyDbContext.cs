@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 using CleanArch.Domain.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace CleanArch.Infra.Data.Context
 {
-    public class VidlyDbContext : DbContext
+    public class VidlyDbContext : IdentityDbContext
     {
-        public VidlyDbContext(DbContextOptions options): base(options)
+        public VidlyDbContext(DbContextOptions<VidlyDbContext> options): base(options)
         {
             
         }
