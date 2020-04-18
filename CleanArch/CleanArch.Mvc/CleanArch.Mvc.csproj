@@ -7,14 +7,82 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Data\**" />
-    <Content Remove="Data\**" />
-    <EmbeddedResource Remove="Data\**" />
-    <None Remove="Data\**" />
+    <Content Remove="bundleconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="bundleconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bundleconfig.json" />
+    <None Include="wwwroot\scripts\require-config.js" />
+    <None Include="wwwroot\vendor\bootbox.all.js" />
+    <None Include="wwwroot\vendor\bootbox.all.min.js" />
+    <None Include="wwwroot\vendor\bootbox.js" />
+    <None Include="wwwroot\vendor\bootbox.locales.js" />
+    <None Include="wwwroot\vendor\bootbox.locales.min.js" />
+    <None Include="wwwroot\vendor\bootbox.min.js" />
+    <None Include="wwwroot\vendor\bootstrap-datepicker\js\bootstrap-datepicker.js" />
+    <None Include="wwwroot\vendor\bootstrap-datepicker\js\bootstrap-datepicker.min.js" />
+    <None Include="wwwroot\vendor\datatables\images\Sorting icons.psd" />
+    <None Include="wwwroot\vendor\datatables\js\dataTables.bootstrap.js" />
+    <None Include="wwwroot\vendor\datatables\js\dataTables.bootstrap.min.js" />
+    <None Include="wwwroot\vendor\datatables\js\dataTables.bootstrap4.js" />
+    <None Include="wwwroot\vendor\datatables\js\dataTables.bootstrap4.min.js" />
+    <None Include="wwwroot\vendor\datatables\js\dataTables.dataTables.js" />
+    <None Include="wwwroot\vendor\datatables\js\dataTables.dataTables.min.js" />
+    <None Include="wwwroot\vendor\datatables\js\dataTables.foundation.js" />
+    <None Include="wwwroot\vendor\datatables\js\dataTables.foundation.min.js" />
+    <None Include="wwwroot\vendor\datatables\js\dataTables.jqueryui.js" />
+    <None Include="wwwroot\vendor\datatables\js\dataTables.jqueryui.min.js" />
+    <None Include="wwwroot\vendor\datatables\js\dataTables.material.js" />
+    <None Include="wwwroot\vendor\datatables\js\dataTables.material.min.js" />
+    <None Include="wwwroot\vendor\datatables\js\dataTables.semanticui.js" />
+    <None Include="wwwroot\vendor\datatables\js\dataTables.semanticui.min.js" />
+    <None Include="wwwroot\vendor\datatables\js\dataTables.uikit.js" />
+    <None Include="wwwroot\vendor\datatables\js\dataTables.uikit.min.js" />
+    <None Include="wwwroot\vendor\datatables\js\jquery.dataTables.js" />
+    <None Include="wwwroot\vendor\datatables\js\jquery.dataTables.min.js" />
+    <None Include="wwwroot\vendor\datatables\js\jquery.js" />
+    <None Include="wwwroot\vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\vendor\font-awesome\less\animated.less" />
+    <None Include="wwwroot\vendor\font-awesome\less\bordered-pulled.less" />
+    <None Include="wwwroot\vendor\font-awesome\less\core.less" />
+    <None Include="wwwroot\vendor\font-awesome\less\fixed-width.less" />
+    <None Include="wwwroot\vendor\font-awesome\less\font-awesome.less" />
+    <None Include="wwwroot\vendor\font-awesome\less\icons.less" />
+    <None Include="wwwroot\vendor\font-awesome\less\larger.less" />
+    <None Include="wwwroot\vendor\font-awesome\less\list.less" />
+    <None Include="wwwroot\vendor\font-awesome\less\mixins.less" />
+    <None Include="wwwroot\vendor\font-awesome\less\path.less" />
+    <None Include="wwwroot\vendor\font-awesome\less\rotated-flipped.less" />
+    <None Include="wwwroot\vendor\font-awesome\less\screen-reader.less" />
+    <None Include="wwwroot\vendor\font-awesome\less\stacked.less" />
+    <None Include="wwwroot\vendor\font-awesome\less\variables.less" />
+    <None Include="wwwroot\vendor\font-awesome\scss\font-awesome.scss" />
+    <None Include="wwwroot\vendor\font-awesome\scss\_animated.scss" />
+    <None Include="wwwroot\vendor\font-awesome\scss\_bordered-pulled.scss" />
+    <None Include="wwwroot\vendor\font-awesome\scss\_core.scss" />
+    <None Include="wwwroot\vendor\font-awesome\scss\_fixed-width.scss" />
+    <None Include="wwwroot\vendor\font-awesome\scss\_icons.scss" />
+    <None Include="wwwroot\vendor\font-awesome\scss\_larger.scss" />
+    <None Include="wwwroot\vendor\font-awesome\scss\_list.scss" />
+    <None Include="wwwroot\vendor\font-awesome\scss\_mixins.scss" />
+    <None Include="wwwroot\vendor\font-awesome\scss\_path.scss" />
+    <None Include="wwwroot\vendor\font-awesome\scss\_rotated-flipped.scss" />
+    <None Include="wwwroot\vendor\font-awesome\scss\_screen-reader.scss" />
+    <None Include="wwwroot\vendor\font-awesome\scss\_stacked.scss" />
+    <None Include="wwwroot\vendor\font-awesome\scss\_variables.scss" />
+    <None Include="wwwroot\vendor\require.js" />
+    <None Include="wwwroot\vendor\require.min.js" />
+    <None Include="wwwroot\vendor\toastr\js\toastr.min.js" />
   </ItemGroup>
 
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />

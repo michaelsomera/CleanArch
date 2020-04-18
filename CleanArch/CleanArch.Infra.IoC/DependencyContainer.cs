@@ -15,9 +15,16 @@ namespace CleanArch.Infra.IoC
         {
             //Application Layer
             services.AddScoped<ICustomerService, CustomerService>();
+            services.AddScoped<IMovieService, MovieService>();
+            services.AddScoped<IGenreService, GenreService>();
+            services.AddScoped<IMembershipTypeService, MembershipTypeService>();
+            services.AddScoped<IRentalService, RentalService>();
 
             //Infra.Data Layer
-            services.AddScoped<ICustomerRepository, CustomerRepository>();
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
+            
+
         }
     }
 }

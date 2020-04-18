@@ -1,0 +1,26 @@
+[
+  {
+    "outputFileName": "wwwroot/vendor/jquery.unobtrusive-ajax.min.js",
+    "inputFiles": [
+      "wwwroot/vendor/jquery.unobtrusive-ajax.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/vendor/jquery.validate.unobtrusive.ext.min.js",
+    "inputFiles": [
+      "wwwroot/vendor/jquery.validate.unobtrusive.ext.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/vendor/typeahead/js/bloodhound.min.js",
+    "inputFiles": [
+      "wwwroot/vendor/typeahead/js/bloodhound.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/vendor/typeahead/js/typeahead.bundle.min.js",
+    "inputFiles": [
+      "wwwroot/vendor/typeahead/js/typeahead.bundle.js"
+    ]
+  }
+]

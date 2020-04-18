@@ -12,11 +12,11 @@ namespace CleanArch.Domain.Models
         [StringLength(255)]
         public string Name { get; set; }
 
-        public Genre Genres { get; set; }
+        public Genre Genre { get; set; }
 
         [Display(Name = "Genre")]
         [Required]
-        public byte GenresId { get; set; }
+        public byte GenreId { get; set; }
 
         [Required]
         [Display(Name = "Release Date")]
